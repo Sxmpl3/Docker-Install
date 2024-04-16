@@ -23,7 +23,7 @@ fi
 
 if [[ $1 == "-d" ]];then
     echo -e "\n[-] Instalando docker y las imagenes necesarias...(esto puede llevar algo de tiempo)"
-    apt install docker docker-compose -y > /dev/null 2>&1
+    yum install docker docker-compose -y > /dev/null 2>&1
     echo -e ""
     docker pull wordpress > /dev/null 2>&1
     docker pull mysql > /dev/null 2>&1
@@ -77,5 +77,3 @@ if [[ $1 == "-k" ]];then
     echo -e "\n[+] Iniciado con éxito"
     echo -e ""
 fi
-
-
