@@ -29,6 +29,7 @@ if [[ $1 == "-d" ]];then
     docker pull mysql > /dev/null 2>&1
     docker pull sxmpl3/login-app > /dev/null 2>&1
     docker pull sxmpl3/register-app > /dev/null 2>&1
+    systemctl start docker 2>&1
     echo -e "\n[+] Instalado con éxito"
     echo -e ""
 fi
